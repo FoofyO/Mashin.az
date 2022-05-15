@@ -1,0 +1,107 @@
+.newad-container { padding: 3% 5% 5% 5%; }
+
+.newad-container .container abbr { color: red; }
+.newad-container .container label { font-size: 3vh; }
+.newad-container .container h1 { text-align: center; margin-bottom: -3vh;}
+.newad-container .container .central { display: flex; justify-content: center; margin: 1vh 0; }
+.newad-container .container hr { border: 0.2vh solid #f1f1f1; margin-bottom: 3vh; width: 85%; }
+.newad-container .container .optional { display: flex; justify-content: center; margin-bottom: 5vh; }
+.newad-container .container .text-area { display: flex; flex-direction: row; justify-content: center; }
+.newad-container .container .errors .errors-grid { display: grid; grid-template-columns: 6fr 6fr 6fr 6fr; }
+.newad-container .container .products { display: flex; flex-direction: row; justify-content: space-evenly; }
+.newad-container .container .images { display: flex; flex-direction: column; align-items: center; margin: 3vh 0; }
+.newad-container .container .options { display: flex; flex-direction: column; align-items: center; margin: 3vh 0; }
+.newad-container .container { display: flex; flex-direction: column; border-radius: 7px; background-color: white; user-select: none; }
+.newad-container .container .terms { display: flex; flex-direction: column; align-items: center; margin-bottom: 2vh; }
+.newad-container .container .errors { display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 5vh;}
+
+.products .left { margin-left: 2vw;}
+.products .product { display: flex; flex-direction: row; align-items: center; margin-bottom: 3vh; }
+.products .left, .products .right { display: flex; flex-direction: column; }
+
+.product input[type="number"] {
+    height: 5vh;
+    width: 10vw;
+    border: none;
+    
+    margin: 0vw 1vw;
+    font-size: 3vh;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+.product input[type="number"] { outline: none; }
+
+.product select {
+    height: 5vh;
+    width: 20vw;
+    border: none;
+    
+    margin-left: 1vw;
+    font-size: 3vh;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+.product select::-webkit-scrollbar { width: 0.7vw; background-color: #f9f9fd; }
+.product select::-webkit-scrollbar-thumb { border-radius: 10vw; background-color: mediumseagreen; }
+.product select::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); border-radius: 10px; background-color: silver; }
+
+.optional .option { margin-right: 1vw; }
+.product select:focus, .text-area textarea:focus { background-color: #ddd; outline: none; }
+.newad-container .container input[type="checkbox"], .product input[type="radio"] { transform: scale(1.2); }
+
+.text-area textarea {
+    width: 50vw;
+    height: 10vh;
+    min-width: 50vw;
+    min-height: 10vw;
+    max-width: 50vw;
+    max-height: 90vh;
+    margin-left: 1vw;
+    
+    border: none;
+    font-size: 3vh;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+.images .after { color: gray; margin: 2vh 6vw 0 6vw; }
+.options .auto-options { display: grid; grid-template-columns: 6fr 6fr 6fr 6fr; }
+.measure label, .optional label, .options label { cursor: pointer; user-select: none;} 
+
+
+.newad-container .container input[type="submit"] {
+    width: 10vw;
+    color: white;
+    
+    border: none;
+    padding: 2vh;
+    font-size: 3vh;
+    transition: 0.4s;
+    border-radius: 7px;
+    
+    cursor: pointer;
+    background-color: orange;
+}
+.newad-container .container input[type=submit]:hover { color: orange; background-color: #ebedf3;}
+
+.images .auto-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 75vw;
+    padding: 1vw;
+    border: 0.4vh gray dotted;
+}
+.auto-images .info { width: 25vw; }
+.auto-images .info ul { color: gray; list-style-type: "- "; }
+.auto-images .upload { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+.terms p { color: gray; }
+.errors .error { color: red; }
+.terms a { color: dodgerblue; }

@@ -1,0 +1,60 @@
+.auth-container {
+    padding: 3% 28% 5% 28%;
+}
+
+.auth-container .container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.column-inputs { display: flex; flex-direction: column; align-items: center; }
+
+.column-inputs input[type=text], .column-inputs input[type=password], .column-inputs select {
+    width: 30vw;
+    border: none;
+    padding: 2vh;
+    margin: 1vh 0 5vh 0;
+    
+    font-size: 3vh;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+.column-inputs input[type=text]:focus, .column-inputs input[type=password]:focus, .column-inputs select:focus { background-color: #ddd; outline: none; }
+
+.column-inputs select::-webkit-scrollbar { width: 0.7vw; background-color: #f9f9fd; }
+.column-inputs select::-webkit-scrollbar-thumb { border-radius: 10vw; background-color: mediumseagreen; }
+.column-inputs select::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); border-radius: 10px; background-color: silver; }
+
+.auth-container .container .error {color: red; }
+.auth-container .container hr { border: 0.2vh solid #f1f1f1; margin-bottom: 3vh; }
+
+.column-inputs input[type=submit] {
+    width: 8vw;
+    color: white;
+    
+    border: none;
+    padding: 2vh;
+    font-size: 3vh;
+    transition: 0.4s;
+    border-radius: 7px;
+    
+    margin: 1vh 0;
+    cursor: pointer;
+    background-color: #04AA6D;
+}
+.column-inputs input[type=submit]:hover { color: #04AA6D; background-color: #ebedf3;}
+
+.auth-container .container .bottom { 
+    width: 30vw;
+    text-align: center;
+    
+    font-size: 2.8vh;
+    border-radius: 7px;
+    margin-bottom: 1vh;
+}
+.auth-container .container .bottom a { color: dodgerblue; text-decoration: none; }
+.auth-container .container .bottom p { color: black; }
+.auth-container .container .errors { display: flex; flex-direction: column; justify-content: center; }

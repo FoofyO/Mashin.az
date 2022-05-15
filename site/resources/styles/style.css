@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Regular";
+    src: url("../fonts/TTNormsPro/TTNormsPro-Regular/TTNormsPro-Regular.ttf");
+}
+
+* { box-sizing: border-box; font-family: "Regular"; }
+body { margin: 0; }
+main { background-color: #ebedf3; }
+body::-webkit-scrollbar { width: 0.7vw; background-color: #f9f9fd; }
+body::-webkit-scrollbar-thumb { border-radius: 10vw; background-color: mediumseagreen; }
+body::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); border-radius: 10px; background-color: silver; }
+
+.FOF-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13.55vh 0;
+}
+.FOF-container h1 {font-size: 8vh;}
+.FOF-container h3 {font-size: 5vh;}

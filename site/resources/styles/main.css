@@ -1,0 +1,158 @@
+.main-container { padding: 3% 5% 5% 5%; }
+
+.main-container .search {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 7px;
+    user-select: none;
+    background-color: white;
+    
+    padding: 3vh;
+    margin-bottom: 5vh;
+}
+
+.main-container .search .row{ display: flex; justify-content: left; flex-direction: row; margin: 0vh 3vw 3vh 3vw; }
+.main-container .search .space { justify-content: space-around; }
+
+.main-container .search input[type="number"] {
+    height: 7vh;
+    width: 11vw;
+    border: none;
+    
+    margin-right: 1.4vh;
+    font-size: 3vh;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+.main-container .search input[type="number"]::placeholder { color: black; }
+.main-container .search input[type="number"] { outline: none; }
+
+.main-container .search select {
+    height: 7vh;
+    width: 15vw;
+    border: none;
+    
+    font-size: 3vh;
+    margin-right: 1vh;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+.main-container .search .priceType { width: 5vw; margin-right: 1vw; }
+
+.main-container .search select:focus { background-color: #ddd; outline: none; }
+.main-container .search select::-webkit-scrollbar { width: 0.7vw; background-color: #f9f9fd; }
+.main-container .search select::-webkit-scrollbar-thumb { border-radius: 10vw; background-color: mediumseagreen; }
+.main-container .search select::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); border-radius: 10px; background-color: silver; }
+
+.main-container .search input[type=submit] {
+    border: 0;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 7px;
+    margin-right: 1vh;
+    padding: 1.5vh 2vh;
+    
+    color: white; 
+    background-color: orange;
+}
+.main-container .search input[type=submit]:active { opacity: 0.8; }
+.main-container .search input[type=submit]:hover { color: orange; background-color: #ebedf3; }
+
+
+.main-container .container { 
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 7px;
+    user-select: none;
+    margin-bottom: 10vh;
+    background-color: white;
+}
+
+.main-container .container h1 { text-align: center; }
+.main-container .container hr { border: 0.1vh solid #f1f1f1; width: 80%; }
+
+.main-container .container .noninfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+.main-container .container .ads {
+    display: grid;
+    grid-row-gap: 8vh;
+    grid-column-gap: 3vh;
+    grid-template-columns: 6fr 6fr 6fr 6fr;
+    margin: 5vh 15vh 10vh 15vh;
+}
+
+.main-container .container .ads .ad {
+    display: flex;
+    flex-direction: column;
+    
+    width: 18vw;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.main-container .container .ads .ad:hover { box-shadow: 0 2px 5px 0 rgb(62, 62, 62); }
+
+.main-container .container .ads .ad .image img{
+    height: 30vh;
+    width: 18vw;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.main-container .container .ads .ad .information {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .container .ads .ad .information p { padding: 0; margin: 1vh; }
+.main-container .container .ads .ad .information .price { color: black; font-size: 3vh; font-weight: bold;}
+.main-container .container .ads .ad .information .main { color: black; font-size: 3vh;}
+.main-container .container .ads .ad .information .datetime { color: gray; font-size: 2.6vh; }
+
+.main-container .container .pagination {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-bottom: 3vh;
+}
+
+.main-container .container .pagination button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+    width: 2vw;
+    max-width: 3vw;
+    padding: 0.5vh;
+    font-size: 3vh;
+    transition: 0.4s;
+    border-radius: 7px;
+    text-decoration: none;
+    
+    cursor: pointer;
+    color: white;
+    border: 0.2vh solid silver;
+    margin-right: 1vh;
+    background-color: gray;
+}
+.main-container .container .pagination button:active:enabled { opacity: 0.6; }
+.main-container .container .pagination button:hover:enabled { color: gray; background-color: #ebedf3; }
+.main-container .container .pagination button:disabled, button[disabled] { opacity: 0.5; }
+
+.main-container .container .pagination .current { background-color: #40a860;} 
+.main-container .container .pagination .current:hover:enabled { color: gray; background-color: #ebedf3; }

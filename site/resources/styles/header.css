@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    user-select: none;
+    background-color: #40a860;
+}
+
+header a { text-decoration: none; }
+
+header h1 { color: white; cursor: pointer; transition: 0.3s; }
+
+header div { display: flex; flex-direction: row; align-items: center; }
+
+header .link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    font-size: 3vh;
+    transition: 0.4s;
+    border-radius: 7px;
+    padding: 1.5vh 2vh;
+}
+header .link svg { margin-left: -0.5vw; margin-right: 0.1vw; }
+header .link:active { opacity: 0.9; }
+
+.orange { color: white; background-color: orange; margin-right: 1vw; }
+.orange:hover { color: orange; background-color: white; }
+.gray { color: white; background-color: #575c5f; }
+.gray:hover { color: #575c5f; background-color: white;}
